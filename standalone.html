@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriLearn Malaysia: Konsep Beban Berganda Malpemakanan | PKES3103</title>
+  <meta name="description" content="Bahan pembelajaran kendiri PKES3103 Pemakanan dan Kesejahteraan (Kumpulan 5) mengenai punca dan kesan beban berganda malpemakanan di Malaysia.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-100 selection:text-emerald-900">
+
+  <!-- ==================== 1. NAVIGASI ATAS TETAP ==================== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-emerald-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 gap-8">
+        
+        <!-- Logo & Wordmark -->
+        <a href="#utama" class="flex items-center gap-2.5 text-left py-1 shrink-0">
+          <div class="w-9 h-9 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-lg shadow-sm">
+            NL
+          </div>
+          <div>
+            <span class="text-base sm:text-lg font-bold tracking-tight text-slate-900 block leading-tight whitespace-nowrap">
+              NutriLearn Malaysia
+            </span>
+            <span class="text-[11px] font-medium text-emerald-700 block leading-none">
+              PKES3103 · Kumpulan 5
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="#utama" class="hover:text-emerald-700 transition-colors whitespace-nowrap">Utama</a>
+          <a href="#nota" class="hover:text-emerald-700 transition-colors whitespace-nowrap">Nota Pembelajaran</a>
+          <a href="#fakta" class="hover:text-emerald-700 transition-colors whitespace-nowrap">Fakta Penting</a>
+          <a href="#mitos" class="hover:text-emerald-700 transition-colors whitespace-nowrap">Mitos & Fakta</a>
+          <a href="#kuiz" class="hover:text-emerald-700 transition-colors whitespace-nowrap">Kuiz Interaktif</a>
+          <a href="#rujukan" class="hover:text-emerald-700 transition-colors whitespace-nowrap">Rujukan</a>
+        </nav>
+
+        <!-- CTA & Mobile Toggle -->
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="#kuiz" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-emerald-600 rounded-lg hover:bg-emerald-700 transition-colors shadow-sm whitespace-nowrap">
+            <span>Uji Minda (Kuiz)</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </a>
+
+          <!-- Hamburger Button -->
+          <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100" aria-label="Menu">
+            <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="hidden lg:hidden border-t border-emerald-100 bg-white px-4 pt-3 pb-5 shadow-lg space-y-1">
+      <a href="#utama" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50">Utama</a>
+      <a href="#nota" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50">Nota Pembelajaran</a>
+      <a href="#fakta" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50">Fakta Penting</a>
+      <a href="#mitos" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50">Mitos & Fakta</a>
+      <a href="#kuiz" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50">Kuiz Interaktif (8 Soalan)</a>
+      <a href="#rujukan" class="mobile-nav-link block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50">Rujukan</a>
+      <div class="pt-2">
+        <a href="#kuiz" class="mobile-nav-link block w-full py-2.5 px-4 text-center text-sm font-semibold text-white bg-emerald-600 rounded-lg hover:bg-emerald-700 shadow-sm">
+          Mula Kuiz Interaktif
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 2. HALAMAN UTAMA (HERO) ==================== -->
+  <section id="utama" class="py-8 sm:py-12 lg:py-16 bg-gradient-to-b from-emerald-50/70 via-white to-slate-50 border-b border-emerald-100/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Banner Penafian Kesihatan -->
+      <div class="mb-8 p-4 rounded-xl bg-amber-50 border border-amber-200/80 text-amber-950 flex flex-col sm:flex-row items-start sm:items-center gap-3 shadow-xs">
+        <div class="p-2 rounded-lg bg-amber-100 text-amber-800 shrink-0">
+          <i data-lucide="alert-triangle" class="w-5 h-5"></i>
+        </div>
+        <div class="text-xs sm:text-sm leading-relaxed">
+          <strong class="font-semibold text-amber-900 block sm:inline">PENAFIAN KESIHATAN PENDIDIKAN: </strong>
+          Aplikasi ini ialah bahan pembelajaran kendiri untuk tujuan pendidikan sahaja dan TIDAK boleh digunakan untuk mendiagnosis kesihatan individu, menggantikan nasihat perubatan profesional, atau dijadikan instrumen klinikal.
+        </div>
+      </div>
+
+      <!-- Kumpulan & Kursus Tag -->
+      <div class="flex flex-wrap items-center gap-2 text-xs font-medium text-emerald-800 mb-3">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-emerald-100 text-emerald-800 font-semibold">
+          <i data-lucide="graduation-cap" class="w-4 h-4 text-emerald-700"></i>
+          PKES3103 Pemakanan dan Kesejahteraan
+        </span>
+        <span class="text-slate-400">·</span>
+        <span class="text-slate-700 font-semibold">Kumpulan 5</span>
+        <span class="text-slate-400">·</span>
+        <span class="text-slate-600">Subtopik: Kumpulan 5 – Punca dan Kesan Beban Berganda Malpemakanan</span>
+      </div>
+
+      <!-- Hero Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
+        
+        <div class="lg:col-span-7 space-y-5">
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+            NutriLearn Malaysia
+            <span class="block text-2xl sm:text-3xl lg:text-4xl font-bold text-emerald-700 mt-1">
+              Konsep Beban Berganda Malpemakanan
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl">
+            Modul pembelajaran kendiri digital yang meneroka secara mendalam konsep, punca, dan kesan 
+            <strong>Beban Berganda Malpemakanan (Double Burden of Malnutrition)</strong> di Malaysia merentasi 
+            peringkat individu, isi rumah, dan populasi.
+          </p>
+
+          <div class="flex items-center gap-2 text-xs text-slate-600 pt-1">
+            <i data-lucide="users" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+            <span><strong>Sasaran Pengguna:</strong> Bakal guru, murid, ibu bapa dan masyarakat umum</span>
+          </div>
+
+          <!-- Quick Navigation Buttons -->
+          <div class="pt-2 flex flex-wrap gap-3">
+            <a href="#nota" class="px-5 py-2.5 bg-emerald-600 text-white rounded-lg font-medium text-sm hover:bg-emerald-700 transition-colors shadow-sm flex items-center gap-2">
+              <i data-lucide="book-open" class="w-4 h-4"></i>
+              <span>Terokai Nota Pembelajaran</span>
+            </a>
+            <a href="#kuiz" class="px-5 py-2.5 bg-amber-500 text-white rounded-lg font-medium text-sm hover:bg-amber-600 transition-colors shadow-sm flex items-center gap-2">
+              <i data-lucide="help-circle" class="w-4 h-4"></i>
+              <span>Uji Minda (8 Soalan)</span>
+            </a>
+            <a href="#fakta" class="px-4 py-2.5 bg-white border border-slate-300 text-slate-700 rounded-lg font-medium text-sm hover:bg-slate-50 transition-colors flex items-center gap-2">
+              <i data-lucide="bar-chart-3" class="w-4 h-4 text-emerald-600"></i>
+              <span>Fakta Statistik</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Concept Preview Box -->
+        <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200/90 shadow-sm space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+            <div class="flex items-center gap-2 text-slate-900 font-bold text-sm">
+              <i data-lucide="compass" class="w-4 h-4 text-emerald-600"></i>
+              <span>Kefahaman Asas: 2 Sisi Malpemakanan</span>
+            </div>
+            <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-sm">
+              WHO & KKM
+            </span>
+          </div>
+
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Beban Berganda bermakna <strong>kekurangan zat</strong> dan <strong>berlebihan berat badan</strong> wujud serentak dalam masyarakat kita.
+          </p>
+
+          <div class="grid grid-cols-2 gap-3 pt-1">
+            <div class="p-3.5 rounded-xl bg-orange-50/70 border border-orange-100">
+              <span class="text-xs font-bold text-orange-900 block mb-1">1. Kurang Zat Makanan</span>
+              <ul class="text-[11px] text-slate-600 space-y-1">
+                <li>• Bantut (Stunting)</li>
+                <li>• Susut (Wasting)</li>
+                <li>• Anemia (Kurang Zat Besi)</li>
+                <li>• Kelaparan Tersembunyi</li>
+              </ul>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-emerald-50/70 border border-emerald-100">
+              <span class="text-xs font-bold text-emerald-900 block mb-1">2. Berlebihan Pemakanan</span>
+              <ul class="text-[11px] text-slate-600 space-y-1">
+                <li>• Berat Badan Berlebihan</li>
+                <li>• Obesiti Kanak & Dewasa</li>
+                <li>• Diabetes Melitus Jenis 2</li>
+                <li>• Penyakit Kardiovaskular</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-50 border border-slate-100 text-slate-600 text-[11px] leading-relaxed">
+            💡 <strong>Tahukah Anda?</strong> Di Malaysia, 54.4% orang dewasa mengalami berat badan berlebihan/obesiti, sementara 21.2% kanak-kanak bawah 5 tahun mengalami bantut (NHMS).
+          </div>
+        </div>
+      </div>
+
+      <!-- Objektif Pembelajaran -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-emerald-100/90 shadow-sm">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="p-1.5 rounded-md bg-emerald-100 text-emerald-800">
+            <i data-lucide="check-circle" class="w-5 h-5"></i>
+          </div>
+          <h2 class="text-lg sm:text-xl font-bold text-slate-900">
+            Objektif Pembelajaran Modul
+          </h2>
+        </div>
+
+        <p class="text-xs sm:text-sm text-slate-600 mb-5">
+          Selepas menerokai modul kendiri ini, pengguna (khususnya bakal pendidik PKES3103 dan masyarakat) akan dapat:
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+            <div class="w-6 h-6 rounded-full bg-emerald-600 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">1</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+              Menjelaskan konsep dan tiga bentuk Beban Berganda Malpemakanan (DBM) pada peringkat individu, isi rumah, dan populasi.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+            <div class="w-6 h-6 rounded-full bg-emerald-600 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">2</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+              Mengenal pasti dan menganalisis punca pelbagai dimensi merangkumi faktor individu, keluarga, persekitaran, dan masyarakat.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+            <div class="w-6 h-6 rounded-full bg-emerald-600 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">3</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+              Menilai implikasi dan kesan beban berganda terhadap status kesihatan, keupayaan pembelajaran murid di sekolah, serta kesejahteraan sosioekonomi.
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 border border-slate-100">
+            <div class="w-6 h-6 rounded-full bg-emerald-600 text-white font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">4</div>
+            <p class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+              Meneroka langkah pencegahan dan pengurusan holistik berlandaskan panduan Kementerian Kesihatan Malaysia (KKM) serta peranan bakal guru.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 3. NOTA PEMBELAJARAN ==================== -->
+  <section id="nota" class="py-12 sm:py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-8">
+        <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-700 mb-2">
+          <i data-lucide="book-open" class="w-4 h-4"></i>
+          <span>Modul Pembelajaran Kendiri</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          Nota Pembelajaran: Beban Berganda Malpemakanan
+        </h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed">
+          Disusun secara berstruktur mengikut tajuk kecil, poin padat, dan jadual ringkas untuk memudahkan pemahaman bakal guru dan masyarakat.
+        </p>
+      </div>
+
+      <!-- Segmented Tab Navigation -->
+      <div class="flex flex-wrap items-center gap-2 p-1.5 bg-slate-100 rounded-xl mb-8 border border-slate-200/80">
+        <button onclick="switchTab('tab-konsep')" id="btn-tab-konsep" class="tab-btn px-3.5 py-2 text-xs sm:text-sm font-bold rounded-lg transition-all bg-white text-emerald-800 shadow-sm border border-slate-200/60">
+          1. Konsep Utama
+        </button>
+        <button onclick="switchTab('tab-bentuk')" id="btn-tab-bentuk" class="tab-btn px-3.5 py-2 text-xs sm:text-sm font-medium rounded-lg transition-all text-slate-600 hover:text-slate-900">
+          2. Bentuk Beban Berganda
+        </button>
+        <button onclick="switchTab('tab-punca')" id="btn-tab-punca" class="tab-btn px-3.5 py-2 text-xs sm:text-sm font-medium rounded-lg transition-all text-slate-600 hover:text-slate-900">
+          3. Punca & Kesan
+        </button>
+        <button onclick="switchTab('tab-jadual')" id="btn-tab-jadual" class="tab-btn px-3.5 py-2 text-xs sm:text-sm font-medium rounded-lg transition-all text-slate-600 hover:text-slate-900">
+          4. Jadual Matriks Ringkas
+        </button>
+        <button onclick="switchTab('tab-pencegahan')" id="btn-tab-pencegahan" class="tab-btn px-3.5 py-2 text-xs sm:text-sm font-medium rounded-lg transition-all text-slate-600 hover:text-slate-900">
+          5. Pencegahan & Pengurusan
+        </button>
+      </div>
+
+      <!-- Tab Content 1: Konsep Utama -->
+      <div id="tab-konsep" class="tab-content space-y-8">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-md bg-emerald-600 text-white flex items-center justify-center text-xs">A</span>
+            Definisi & Konsep Utama (WHO & KKM)
+          </h3>
+          <p class="text-sm sm:text-base text-slate-700 leading-relaxed mb-4">
+            <strong>Beban Berganda Malpemakanan (Double Burden of Malnutrition - DBM)</strong> ditakrifkan oleh Pertubuhan Kesihatan Sedunia (WHO) sebagai 
+            <strong>kewujudan bersama masalah kekurangan zat makanan</strong> (seperti bantut, susut, dan kekurangan mikronutrien) 
+            bersama-sama dengan <strong>masalah berat badan berlebihan, obesiti, serta penyakit tidak berjangkit (NCD)</strong> yang berkaitan pemakanan sepanjang hayat.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
+              <span class="text-xs font-bold text-orange-800 uppercase tracking-wide block mb-1">Dimensi 1: Kurang Pemakanan</span>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Kekurangan tenaga dan protein kronik yang membawa kepada <strong>bantut (stunting)</strong>, susut berat (wasting), dan kurang berat badan.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
+              <span class="text-xs font-bold text-amber-800 uppercase tracking-wide block mb-1">Dimensi 2: Kelaparan Tersembunyi</span>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Kekurangan <strong>mikronutrien penting</strong> (zat besi, iodin, vitamin A & D). Kerap berlaku walaupun individu makan banyak kalori kosong.
+              </p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-xs">
+              <span class="text-xs font-bold text-emerald-800 uppercase tracking-wide block mb-1">Dimensi 3: Berlebihan Pemakanan</span>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Pengambilan tenaga berlebihan yang menyebabkan <strong>berat badan berlebihan, obesiti</strong>, serta risiko penyakit seperti diabetes dan hipertensi.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-emerald-50/50 border border-emerald-100">
+          <h3 class="text-base font-bold text-emerald-950 mb-2 flex items-center gap-2">
+            <i data-lucide="globe-2" class="w-5 h-5 text-emerald-700"></i>
+            Kaitan dengan Konteks Malaysia (Fenomena Transisi Pemakanan)
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed mb-3">
+            Malaysia telah melalui pembandaran (urbanisasi) yang pesat dalam tempoh 30 tahun. Peralihan corak pemakanan (<em>nutrition transition</em>) daripada makanan tradisional berserat tinggi kepada diet komersial segera, tinggi garam, lemak tepu dan gula telah melonjakkan kadar obesiti dewasa kepada <strong>54.4% (NHMS 2023)</strong>.
+          </p>
+          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+            Namun pada masa yang sama, isu <strong>kebantutan kanak-kanak bawah 5 tahun (21.2% - 21.8%)</strong> dan anemia dalam kalangan wanita reproduktif (21.3%) masih berakar umbi akibat ketidaksamarataan ekonomi, kos makanan bernutrisi, dan amalan pemakanan awal.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tab Content 2: Bentuk Beban Berganda -->
+      <div id="tab-bentuk" class="tab-content hidden space-y-6">
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700">
+          Beban Berganda Malpemakanan tidak hanya berlaku pada skala negara, malah boleh berlaku serentak pada 3 peringkat utama:
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-orange-100 text-orange-800 flex items-center justify-center mb-3">
+                <i data-lucide="user" class="w-5 h-5"></i>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mb-2">1. Peringkat Individu</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+                Berlaku apabila <strong>satu individu yang sama</strong> mengalami lebih daripada satu bentuk malpemakanan serentak atau merentas fasa hidupnya.
+              </p>
+              <div class="p-3 rounded-lg bg-orange-50/60 border border-orange-100 text-xs text-slate-700 space-y-1.5">
+                <p class="font-semibold text-orange-900">Contoh Nyata:</p>
+                <p>• Seorang dewasa yang mengalami obesiti tetapi menghidap anemia akibat kekurangan zat besi.</p>
+                <p>• Kanak-kanak yang mengalami bantut pada awal usia, namun mempunyai berat badan berlebihan (<em>stunted overweight child</em>).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-3">
+                <i data-lucide="home" class="w-5 h-5"></i>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mb-2">2. Peringkat Isi Rumah</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+                Berlaku apabila dalam <strong>satu keluarga atau satu rumah yang sama</strong>, wujud ahli yang mengalami masalah kekurangan zat dan ahli yang berlebihan berat badan.
+              </p>
+              <div class="p-3 rounded-lg bg-emerald-50/60 border border-emerald-100 text-xs text-slate-700 space-y-1.5">
+                <p class="font-semibold text-emerald-900">Contoh Nyata (Pasangan Dwi-Beban):</p>
+                <p>• Ibu mengalami berat badan berlebihan atau obesiti, manakala anak kecil dalam rumah tersebut mengalami bantut atau kekurangan mikronutrien.</p>
+                <p>• Berpunca daripada diet keluarga yang padat tenaga murah tetapi rendah gizi.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center mb-3">
+                <i data-lucide="globe-2" class="w-5 h-5"></i>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mb-2">3. Peringkat Populasi / Komuniti</h4>
+              <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-3">
+                Berlaku pada peringkat <strong>masyarakat atau negara</strong>, di mana statistik mencatatkan kadar kekurangan zat dan kadar obesiti yang tinggi secara serentak.
+              </p>
+              <div class="p-3 rounded-lg bg-blue-50/60 border border-blue-100 text-xs text-slate-700 space-y-1.5">
+                <p class="font-semibold text-blue-900">Konteks Malaysia:</p>
+                <p>• Prevalens bantut kanak-kanak bawah 5 tahun mencecah 21.2% - 21.8%.</p>
+                <p>• Pada masa yang sama, kadar obesiti & berlebihan berat badan dewasa mencecah 54.4%, memberi tekanan berganda kepada sistem kesihatan awam.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 3: Punca & Kesan -->
+      <div id="tab-punca" class="tab-content hidden space-y-8">
+        <div>
+          <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+            <i data-lucide="layers" class="w-5 h-5 text-emerald-600"></i>
+            Punca Beban Berganda: 4 Peringkat Faktor
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+              <span class="text-xs font-bold text-emerald-800 uppercase tracking-wide block mb-1">1. Faktor Individu</span>
+              <ul class="text-xs sm:text-sm text-slate-700 space-y-2 mt-2">
+                <li>• <strong>Pengaturcaraan Metabolik:</strong> Kanak-kanak yang mengalami kekurangan zat pada 1,000 hari pertama mengalami adaptasi biologi yang menjadikannya lebih mudah menyimpan lemak apabila terdedah kepada kalori tinggi kemudian hari.</li>
+                <li>• <strong>Pilihan Pemakanan:</strong> Kerap mengambil snek manis, minuman bergula, dan makanan terproses ultra (UPF) yang padat tenaga tetapi kosong mikronutrien.</li>
+                <li>• <strong>Gaya Hidup Sedentari:</strong> Kurang aktiviti fizikal dan masa skrin berlebihan.</li>
+              </ul>
+            </div>
+
+            <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+              <span class="text-xs font-bold text-emerald-800 uppercase tracking-wide block mb-1">2. Faktor Keluarga</span>
+              <ul class="text-xs sm:text-sm text-slate-700 space-y-2 mt-2">
+                <li>• <strong>Kekangan Pendapatan (Sosioekonomi):</strong> Makanan padat kalori (mi segera, biskut manis) kerap lebih murah dan mudah kenyang berbanding buah-buahan dan protein segar.</li>
+                <li>• <strong>Literasi Pemakanan Ibu Bapa:</strong> Kurang kefahaman mengenai saiz hidangan, membaca label nutrisi, dan bahaya memperkenalkan minuman manis terlalu awal.</li>
+                <li>• <strong>Amalan Penyusuan:</strong> Kadar penyusuan susu ibu eksklusif selama 6 bulan pertama yang masih boleh dipertingkatkan di Malaysia.</li>
+              </ul>
+            </div>
+
+            <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+              <span class="text-xs font-bold text-emerald-800 uppercase tracking-wide block mb-1">3. Faktor Persekitaran</span>
+              <ul class="text-xs sm:text-sm text-slate-700 space-y-2 mt-2">
+                <li>• <strong>Persekitaran Obesogenik:</strong> Lambakan premis makanan segera, gerai minuman manis, dan kedai serbaneka di kawasan kediaman dan persekitaran sekolah.</li>
+                <li>• <strong>Kekurangan Ruang Riadah:</strong> Ketiadaan taman rekreasi atau laluan pejalan kaki yang selamat dan kondusif untuk kanak-kanak bermain aktif.</li>
+                <li>• <strong>Akses Bekalan Makanan Segar:</strong> Kawasan bandar padat atau luar bandar tertentu yang sukar mendapatkan sayur-sayuran segar pada harga berpatutan.</li>
+              </ul>
+            </div>
+
+            <div class="p-5 rounded-xl bg-slate-50 border border-slate-200">
+              <span class="text-xs font-bold text-emerald-800 uppercase tracking-wide block mb-1">4. Faktor Masyarakat & Sistemik</span>
+              <ul class="text-xs sm:text-sm text-slate-700 space-y-2 mt-2">
+                <li>• <strong>Pemasaran & Iklan Agresif:</strong> Pengiklanan makanan terproses ultra yang menyasarkan kanak-kanak melalui media sosial dan televisyen.</li>
+                <li>• <strong>Norma Sosial Pemakanan:</strong> Kebiasaan meraikan sesuatu dengan makanan manis/bergoreng serta salah faham bahawa anak berbadan gempal adalah lambang kejayaan asuhan.</li>
+                <li>• <strong>Dasar Rantaian Makanan:</strong> Keperluan pelarasan subsidi bahan asas agar menggalakkan pilihan makanan lebih berkhasiat.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+            <i data-lucide="activity" class="w-5 h-5 text-amber-600"></i>
+            Kesan Beban Berganda: Kesihatan, Pembelajaran, dan Kesejahteraan
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
+              <div class="flex items-center gap-2 mb-3 text-red-600 font-bold text-sm">
+                <i data-lucide="heart" class="w-4 h-4"></i>
+                <span>Terhadap Kesihatan</span>
+              </div>
+              <ul class="text-xs sm:text-sm text-slate-600 space-y-2">
+                <li>• <strong>Penyakit Tidak Berjangkit (NCD):</strong> Peningkatan risiko diabetes melitus jenis 2, hipertensi, dan strok pada usia muda.</li>
+                <li>• <strong>Sistem Imun Rendah:</strong> Kanak-kanak bantut dan kekurangan zat mudah dijangkiti pneumonia dan penyakit berjangkit.</li>
+                <li>• <strong>Kesihatan Psikososial:</strong> Gangguan imej kendiri dan tekanan emosi akibat stigma berat badan.</li>
+              </ul>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
+              <div class="flex items-center gap-2 mb-3 text-amber-600 font-bold text-sm">
+                <i data-lucide="brain" class="w-4 h-4"></i>
+                <span>Terhadap Pembelajaran Murid</span>
+              </div>
+              <ul class="text-xs sm:text-sm text-slate-600 space-y-2">
+                <li>• <strong>Fungsi Kognitif:</strong> Kekurangan zat besi (anemia) menyebabkan murid lesu, mengantuk, dan hilang daya tumpuan di dalam kelas.</li>
+                <li>• <strong>Daya Ingatan Terjejas:</strong> Bantut awal menjejaskan perkembangan struktur neuron otak yang kritikal.</li>
+                <li>• <strong>Ketidakhadiran Sekolah:</strong> Murid kerap tidak hadir ke sekolah akibat masalah kesihatan berulang.</li>
+              </ul>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
+              <div class="flex items-center gap-2 mb-3 text-blue-600 font-bold text-sm">
+                <i data-lucide="trending-down" class="w-4 h-4"></i>
+                <span>Terhadap Kesejahteraan Sosioekonomi</span>
+              </div>
+              <ul class="text-xs sm:text-sm text-slate-600 space-y-2">
+                <li>• <strong>Beban Kos Perubatan:</strong> Kos rawatan jangka panjang penyakit kronik memberi tekanan kewangan kepada isi rumah dan KKM.</li>
+                <li>• <strong>Kehilangan Produktiviti:</strong> Generasi muda mengalami pengurangan potensi pendapatan dan kapasiti kerja masa depan.</li>
+                <li>• <strong>Kitaran Malpemakanan Antara Generasi:</strong> Ibu malpemakanan melahirkan anak berisiko malpemakanan.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 4: Jadual Matriks Ringkas -->
+      <div id="tab-jadual" class="tab-content hidden space-y-4">
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700">
+          Jadual ringkas ini merumuskan hubungan punca utama dengan implikasi langsung beban berganda mengikut domain faktor:
+        </div>
+
+        <div class="overflow-x-auto rounded-xl border border-slate-200 shadow-xs">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead class="bg-emerald-800 text-white font-semibold">
+              <tr>
+                <th class="py-3 px-4 w-1/4">Domain Faktor</th>
+                <th class="py-3 px-4 w-3/8">Punca Utama</th>
+                <th class="py-3 px-4 w-3/8">Kesan Langsung Terhadap Murid & Masyarakat</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 bg-white text-slate-700">
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-900 align-top">1. Individu</td>
+                <td class="py-3 px-4 align-top">Pilihan makanan tinggi kalori kosong (UPF), kurang senaman, pengaturcaraan metabolik 1,000 hari pertama.</td>
+                <td class="py-3 px-4 align-top">Obesiti abdominal, kelaparan tersembunyi mikronutrien, daya tumpuan rendah, risiko NCD pramatang.</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-900 align-top">2. Keluarga</td>
+                <td class="py-3 px-4 align-top">Kekangan belanjawan B40 (makanan segar lebih mahal), amalan penyusuan terhad, kurang literasi nutrisi label makanan.</td>
+                <td class="py-3 px-4 align-top">Kewujudan dwi-beban isi rumah (ibu obes + anak bantut), diet sekeluarga tidak seimbang.</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-900 align-top">3. Persekitaran</td>
+                <td class="py-3 px-4 align-top">Persekitaran obesogenik sekitar sekolah/rumah, ketiadaan laluan pejalan kaki selamat, akses terhad sayur-sayuran segar.</td>
+                <td class="py-3 px-4 align-top">Kanak-kanak mudah membeli snek manis di luar sekolah, kurang aktiviti riadah fizikal aktif.</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-semibold text-slate-900 align-top">4. Masyarakat & Sistem</td>
+                <td class="py-3 px-4 align-top">Pemasaran agresif makanan segera, norma sosial mengaitkan gempal dengan sihat, pelarasan rantaian bekalan makanan.</td>
+                <td class="py-3 px-4 align-top">Peningkatan beban rawatan kesihatan awam, penurunan kualiti modal insan dan produktiviti negara.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-[11px] text-slate-500 italic">
+          * Nota: Diringkaskan mengikut kerangka konseptual KKM dan WHO untuk kursus PKES3103 Pemakanan dan Kesejahteraan.
+        </div>
+      </div>
+
+      <!-- Tab Content 5: Pencegahan & Pengurusan -->
+      <div id="tab-pencegahan" class="tab-content hidden space-y-8">
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700">
+          Langkah intervensi perlu dilaksanakan secara holistik pada sekurang-kurangnya 3 peringkat utama:
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-3">
+                <i data-lucide="utensils" class="w-5 h-5"></i>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mb-2">1. Individu & Keluarga</h4>
+              <ul class="text-xs sm:text-sm text-slate-600 space-y-2 mb-3">
+                <li>• <strong>Pinggan Sihat Malaysia (Suku-Suku Separuh):</strong> Mengawal saiz hidangan dengan suku karbohidrat, suku protein, separuh sayur & buah.</li>
+                <li>• <strong>Penjagaan 1,000 Hari Pertama:</strong> Menyusukan bayi secara eksklusif selama 6 bulan dan pemberian makanan pelengkap berzat.</li>
+                <li>• <strong>Membaca Label Nutrisi:</strong> Memeriksa kandungan gula, garam, dan lemak tersembunyi sebelum membeli.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-3">
+                <i data-lucide="school" class="w-5 h-5"></i>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mb-2">2. Sekolah & Bakal Guru (PKES)</h4>
+              <ul class="text-xs sm:text-sm text-slate-600 space-y-2 mb-3">
+                <li>• <strong>Pemantauan Kantin Sekolah:</strong> Memastikan pengusaha kantin mematuhi Garis Panduan Penjualan Makanan Sihat KKM/KPM (tiada jualan makanan ringan & minuman bergula).</li>
+                <li>• <strong>Program Bantuan Berkhasiat:</strong> Memantau penyajian Rancangan Makanan Tambahan (RMT) dan Program Susu Sekolah (PSS).</li>
+                <li>• <strong>Literasi Pemakanan Tanpa Stigma:</strong> Mendidik amalan sihat secara positif tanpa menyalahkan murid (<em>weight-neutral education</em>).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-slate-200 shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center mb-3">
+                <i data-lucide="building-2" class="w-5 h-5"></i>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mb-2">3. Komuniti & Dasar Kerajaan</h4>
+              <ul class="text-xs sm:text-sm text-slate-600 space-y-2 mb-3">
+                <li>• <strong>Duti Eksais Minuman Bergula (Cukai Gula):</strong> Membendung penggunaan gula berlebihan oleh industri minuman.</li>
+                <li>• <strong>Pelan Tindakan Pemakanan Kebangsaan (NPANM):</strong> Mengukuhkan program intervensi seperti KOSPEN di peringkat komuniti.</li>
+                <li>• <strong>Keselamatan Makanan Bernutrisi:</strong> Bantuan bersasar untuk meringankan kos makanan segar bagi golongan rentan.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Plate Explorer -->
+        <div class="p-6 rounded-2xl bg-emerald-50/70 border border-emerald-200">
+          <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-2">
+              <i data-lucide="utensils" class="w-5 h-5 text-emerald-700"></i>
+              <h4 class="text-base sm:text-lg font-bold text-slate-900">
+                Interaktif: Eksplorasi Pinggan Sihat Malaysia (Suku-Suku Separuh)
+              </h4>
+            </div>
+            <span class="text-xs font-semibold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
+              Inisiatif KKM
+            </span>
+          </div>
+
+          <p class="text-xs sm:text-sm text-slate-600 mb-6">
+            Klik bahagian pinggan di bawah untuk melihat perincian kumpulan makanan dan fungsinya:
+          </p>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-5 flex justify-center">
+              <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full border-4 border-slate-200 bg-white p-2 shadow-md flex items-center justify-center">
+                <button onclick="selectPlate('carbs')" id="plate-carbs" class="absolute top-2 right-2 w-28 h-28 rounded-tr-full flex flex-col items-center justify-center p-2 text-center transition-all bg-amber-50/80 border border-amber-200 hover:bg-amber-100">
+                  <span class="text-xs font-bold text-amber-900">Suku (1/4)</span>
+                  <span class="text-[10px] text-amber-800 font-medium">Karbohidrat</span>
+                </button>
+                <button onclick="selectPlate('protein')" id="plate-protein" class="absolute bottom-2 right-2 w-28 h-28 rounded-br-full flex flex-col items-center justify-center p-2 text-center transition-all bg-orange-50/80 border border-orange-200 hover:bg-orange-100">
+                  <span class="text-xs font-bold text-orange-900">Suku (1/4)</span>
+                  <span class="text-[10px] text-orange-800 font-medium">Protein</span>
+                </button>
+                <button onclick="selectPlate('veggies')" id="plate-veggies" class="absolute top-2 left-2 w-28 sm:w-32 h-[calc(100%-1rem)] rounded-l-full flex flex-col items-center justify-center p-3 text-center transition-all bg-emerald-100 border border-emerald-400 ring-2 ring-emerald-500 scale-102 z-10">
+                  <span class="text-xs sm:text-sm font-bold text-emerald-900">Separuh (1/2)</span>
+                  <span class="text-[11px] text-emerald-800 font-medium mt-1">Sayur & Buah</span>
+                </button>
+                <div class="absolute w-12 h-12 rounded-full bg-white border border-slate-300 shadow-xs flex items-center justify-center text-[10px] font-bold text-slate-700 pointer-events-none">
+                  Air Kosong
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7 bg-white p-5 rounded-xl border border-emerald-200 shadow-xs">
+              <div id="plate-desc-veggies" class="plate-desc space-y-2">
+                <span class="text-xs font-bold text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-sm">SEPARUH PINGGAN (1/2): Sayur & Buah</span>
+                <h5 class="text-base font-bold text-slate-900">Serat, Vitamin & Antioksidan</h5>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Membekalkan mikronutrien penting bagi mencegah "hidden hunger" (anemia, kekurangan vitamin A/C), serta serat yang melancarkan pencernaan dan memberi rasa kenyang berpanjangan bagi mengawal berat badan berlebihan.
+                </p>
+                <div class="p-2.5 rounded-lg bg-emerald-50 text-[11px] text-emerald-900 font-medium">
+                  ✓ Contoh pilihan tempatan: Sawi, bayam, kailan, ulam-ulaman, betik, tembikai, pisang, dan jambu batu.
+                </div>
+              </div>
+
+              <div id="plate-desc-carbs" class="plate-desc hidden space-y-2">
+                <span class="text-xs font-bold text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded-sm">SUKU PINGGAN (1/4): Karbohidrat</span>
+                <h5 class="text-base font-bold text-slate-900">Sumber Tenaga Utama Berjadual</h5>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Hadkan bahagian karbohidrat kepada satu suku pinggan sahaja. Utamakan bijirin penuh (beras perang, oat, roti mil penuh) yang melepaskan tenaga secara beransur-ansur untuk mengelakkan lonjakan insulin dan obesiti.
+                </p>
+                <div class="p-2.5 rounded-lg bg-amber-50 text-[11px] text-amber-900 font-medium">
+                  ✓ Contoh: Nasi (utamakan beras perang), capati mil penuh, ubi keledek rebus. Elakkan menambah nasi secara berlebihan.
+                </div>
+              </div>
+
+              <div id="plate-desc-protein" class="plate-desc hidden space-y-2">
+                <span class="text-xs font-bold text-orange-800 bg-orange-100 px-2.5 py-0.5 rounded-sm">SUKU PINGGAN (1/4): Sumber Protein</span>
+                <h5 class="text-base font-bold text-slate-900">Pertumbuhan Fizikal & Pembinaan Sel Otot</h5>
+                <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  Sangat kritikal untuk mencegah bantut pada kanak-kanak dan mengekalkan jisim otot. Pilih kaedah masakan rendah lemak (kukus, panggang, sup) berbanding goreng celup yang tinggi kalori.
+                </p>
+                <div class="p-2.5 rounded-lg bg-orange-50 text-[11px] text-orange-900 font-medium">
+                  ✓ Contoh: Ikan kembung, ayam tanpa kulit, telur, tempe, tauhu, dan dal/kekacang.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 4. FAKTA PENTING (STATISTIK) ==================== -->
+  <section id="fakta" class="py-12 sm:py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-8">
+        <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-700 mb-2">
+          <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+          <span>Petunjuk & Statistik Rasmi (2016–2024)</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          Fakta Penting: Status Beban Berganda di Malaysia
+        </h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed">
+          Kad ringkas berasaskan laporan rasmi Kementerian Kesihatan Malaysia (NHMS), SEANUTS II, dan WHO bagi memberi gambaran data yang tepat tanpa tekaan.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap gap-2 mb-8">
+        <button onclick="filterStats('all')" id="stat-btn-all" class="stat-filter-btn px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-emerald-700 text-white shadow-xs">Semua Fakta (6)</button>
+        <button onclick="filterStats('undernutrition')" id="stat-btn-undernutrition" class="stat-filter-btn px-3.5 py-1.5 text-xs font-medium rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100">Kurang Zat / Bantut</button>
+        <button onclick="filterStats('overnutrition')" id="stat-btn-overnutrition" class="stat-filter-btn px-3.5 py-1.5 text-xs font-medium rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100">Obesiti & NCD</button>
+        <button onclick="filterStats('dual_burden')" id="stat-btn-dual_burden" class="stat-filter-btn px-3.5 py-1.5 text-xs font-medium rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100">Dwi-Beban Isi Rumah</button>
+        <button onclick="filterStats('misconception')" id="stat-btn-misconception" class="stat-filter-btn px-3.5 py-1.5 text-xs font-medium rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100">Salah Faham Umum</button>
+      </div>
+
+      <!-- Stat Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="stat-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between" data-cat="undernutrition">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700 tracking-tight tabular-nums">21.2% - 21.8%</div>
+              <span class="text-[11px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">Data Rasmi</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2 leading-snug">Prevalens Bantut Kanak-Kanak Bawah 5 Tahun di Malaysia</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Kira-kira 1 daripada 5 kanak-kanak bawah 5 tahun di Malaysia mengalami bantut (ketinggian tidak sepadan umur akibat kekurangan zat berpanjangan), melebihi ambang kepentingan kesihatan awam WHO.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-[11px] text-slate-500 space-y-1">
+            <p><strong>Sumber:</strong> National Health and Morbidity Survey (NHMS) & Bahagian Pemakanan KKM</p>
+            <p><strong>Tahun Data:</strong> 2019 & 2022</p>
+          </div>
+        </div>
+
+        <div class="stat-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between" data-cat="overnutrition">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700 tracking-tight tabular-nums">54.4%</div>
+              <span class="text-[11px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">Data Rasmi</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2 leading-snug">Kadar Berat Badan Berlebihan & Obesiti Dewasa Malaysia</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Lebih daripada separuh populasi dewasa Malaysia kini mempunyai berat badan berlebihan atau obesiti (berlebihan berat badan 32.6% dan obes 21.8%), meletakkan Malaysia antara negara tertinggi di Asia Tenggara.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-[11px] text-slate-500 space-y-1">
+            <p><strong>Sumber:</strong> National Health and Morbidity Survey (NHMS 2023), Institut Kesihatan Umum KKM</p>
+            <p><strong>Tahun Data:</strong> 2023</p>
+          </div>
+        </div>
+
+        <div class="stat-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between" data-cat="undernutrition">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700 tracking-tight tabular-nums">21.3%</div>
+              <span class="text-[11px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">Data Rasmi</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2 leading-snug">Prevalens Anemia Wanita Umur Reproduktif (15-49 Tahun)</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Sekitar 1 daripada 5 wanita berumur reproduktif mengalami masalah anemia (lazimnya berpunca daripada kekurangan zat besi). Anemia semasa hamil berkait rapat dengan risiko berat lahir rendah dan bantut pada bayi.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-[11px] text-slate-500 space-y-1">
+            <p><strong>Sumber:</strong> Tinjauan Kebangsaan Kesihatan dan Morbiditi (NHMS 2019)</p>
+            <p><strong>Tahun Data:</strong> 2019</p>
+          </div>
+        </div>
+
+        <div class="stat-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between" data-cat="dual_burden">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <div class="text-xl sm:text-2xl font-extrabold text-emerald-700 tracking-tight">Kewujudan Bersama</div>
+              <span class="text-[11px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">Data Rasmi</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2 leading-snug">Beban Berganda Dalam Satu Isi Rumah (Dual-Burden Household)</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Kajian pemakanan mendapati peningkatan isi rumah Malaysia di mana ibu bapa mengalami berat badan berlebihan/obesiti, manakala anak kecil di rumah yang sama mengalami bantut atau kekurangan mikronutrien (vitamin D dan zat besi).
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-[11px] text-slate-500 space-y-1">
+            <p><strong>Sumber:</strong> South East Asian Nutrition Surveys II (SEANUTS II Malaysia)</p>
+            <p><strong>Tahun Data:</strong> 2022</p>
+          </div>
+        </div>
+
+        <div class="stat-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between" data-cat="misconception">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <div class="text-xl sm:text-2xl font-extrabold text-amber-700 tracking-tight">Kelaparan Tersembunyi</div>
+              <span class="text-[11px] font-semibold text-amber-800 bg-amber-100 px-2.5 py-1 rounded-md">Salah Faham</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2 leading-snug">Maklumat Disalahertikan: "Badan Berisi Pasti Cukup Zat?"</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Hakikat: Individu berbadan gempal boleh mengalami "hidden hunger". Makanan berkalori tinggi (lemak dan gula terproses) memberi lebihan tenaga tetapi kerap mengabaikan mikronutrien penting seperti zat besi, kalsium, dan vitamin penting.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-[11px] text-slate-500 space-y-1">
+            <p><strong>Sumber:</strong> Pertubuhan Kesihatan Sedunia (WHO) & KKM</p>
+            <p><strong>Tahun Data:</strong> 2020</p>
+          </div>
+        </div>
+
+        <div class="stat-card bg-white rounded-2xl p-6 border border-slate-200/90 shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between" data-cat="overnutrition">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-3">
+              <div class="text-2xl sm:text-3xl font-extrabold text-emerald-700 tracking-tight tabular-nums">15.6%</div>
+              <span class="text-[11px] font-medium text-slate-500 bg-slate-100 px-2 py-0.5 rounded-md">Data Rasmi</span>
+            </div>
+            <h3 class="text-base font-bold text-slate-900 mb-2 leading-snug">Prevalens Diabetes Melitus Berkaitan Diet dalam Dewasa</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+              Kira-kira 3.6 juta orang dewasa Malaysia menghidap diabetes melitus jenis 2, yang dipacu secara ketara oleh corak pemakanan tidak seimbang, obesiti abdominal, dan gaya hidup sedentari.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-[11px] text-slate-500 space-y-1">
+            <p><strong>Sumber:</strong> National Health and Morbidity Survey (NHMS 2023)</p>
+            <p><strong>Tahun Data:</strong> 2023</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 5. MITOS DAN FAKTA (INTERAKTIF) ==================== -->
+  <section id="mitos" class="py-12 sm:py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div class="max-w-2xl">
+          <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-700 mb-2">
+            <i data-lucide="help-circle" class="w-4 h-4"></i>
+            <span>Interaktif & Reflektif</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            Mitos dan Fakta: Uji Pemahaman Anda
+          </h2>
+          <p class="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed">
+            Pilih sama ada setiap kenyataan di bawah <strong>"Benar"</strong> atau <strong>"Tidak Benar"</strong> untuk melihat fakta saintifik dan penjelasan pembetulan.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-3 shrink-0">
+          <div class="text-xs text-slate-500 font-medium">
+            Disemak: <strong id="mythAnsweredCount" class="text-slate-900">0</strong> / 5
+          </div>
+          <button onclick="resetMyths()" class="px-3 py-1.5 text-xs text-slate-600 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors flex items-center gap-1.5">
+            <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+            <span>Tetapkan Semula</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Myth Cards Container -->
+      <div class="space-y-6" id="mythsList">
+        
+        <!-- Myth 1 -->
+        <div class="myth-card p-6 rounded-2xl border border-slate-200 bg-slate-50/70" data-myth="1" data-correct="false">
+          <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+            <div class="flex-1 space-y-2">
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-500">
+                <span>Pernyataan #1</span>
+                <span class="myth-status-pill hidden"></span>
+              </div>
+              <p class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                "Kanak-kanak yang berbadan gempal dan tembam sentiasa sihat dan tidak mungkin mengalami masalah malpemakanan."
+              </p>
+            </div>
+            <div class="flex items-center gap-2.5 shrink-0">
+              <button onclick="answerMyth(1, true)" class="myth-btn-true px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+                <span>Benar</span>
+              </button>
+              <button onclick="answerMyth(1, false)" class="myth-btn-false px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5">
+                <i data-lucide="x" class="w-4 h-4"></i>
+                <span>Tidak Benar</span>
+              </button>
+            </div>
+          </div>
+          <div class="myth-explanation hidden mt-5 pt-4 border-t border-slate-200/80 space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-sm bg-orange-100 text-orange-900">Status Fakta: TIDAK BENAR</span>
+              <span class="text-xs font-bold text-slate-800">Kenyataan ini TIDAK BENAR</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed bg-white/80 p-3.5 rounded-xl border border-slate-200/60">
+              <strong>Penjelasan Saintifik:</strong> Malpemakanan merangkumi KEDUA-DUA kekurangan zat dan kelebihan pemakanan. Kanak-kanak gempal boleh mengalami kelaparan tersembunyi (hidden hunger), iaitu kekurangan mikronutrien kritikal seperti zat besi (anemia), vitamin A, dan vitamin D akibat pemakanan tinggi kalori kosong tanpa zat seimbang.
+            </p>
+          </div>
+        </div>
+
+        <!-- Myth 2 -->
+        <div class="myth-card p-6 rounded-2xl border border-slate-200 bg-slate-50/70" data-myth="2" data-correct="false">
+          <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+            <div class="flex-1 space-y-2">
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-500">
+                <span>Pernyataan #2</span>
+                <span class="myth-status-pill hidden"></span>
+              </div>
+              <p class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                "Beban Berganda Malpemakanan hanya berlaku di negara berpendapatan rendah dan tidak wujud di Malaysia."
+              </p>
+            </div>
+            <div class="flex items-center gap-2.5 shrink-0">
+              <button onclick="answerMyth(2, true)" class="myth-btn-true px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+                <span>Benar</span>
+              </button>
+              <button onclick="answerMyth(2, false)" class="myth-btn-false px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5">
+                <i data-lucide="x" class="w-4 h-4"></i>
+                <span>Tidak Benar</span>
+              </button>
+            </div>
+          </div>
+          <div class="myth-explanation hidden mt-5 pt-4 border-t border-slate-200/80 space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-sm bg-orange-100 text-orange-900">Status Fakta: TIDAK BENAR</span>
+              <span class="text-xs font-bold text-slate-800">Kenyataan ini TIDAK BENAR</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed bg-white/80 p-3.5 rounded-xl border border-slate-200/60">
+              <strong>Penjelasan Saintifik:</strong> Malaysia menghadapi beban berganda yang sangat ketara. Data NHMS menunjukkan kadar obesiti dewasa melonjak sehingga 54.4% (NHMS 2023), sementara kadar kanak-kanak bantut bawah 5 tahun masih mencatat kadar tinggi sekitar 21.2% (NHMS 2019/2022). Fenomena transisi pemakanan ini wujud di kawasan bandar dan luar bandar.
+            </p>
+          </div>
+        </div>
+
+        <!-- Myth 3 -->
+        <div class="myth-card p-6 rounded-2xl border border-slate-200 bg-slate-50/70" data-myth="3" data-correct="true">
+          <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+            <div class="flex-1 space-y-2">
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-500">
+                <span>Pernyataan #3</span>
+                <span class="myth-status-pill hidden"></span>
+              </div>
+              <p class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                "Beban berganda malpemakanan boleh berlaku secara serentak dalam diri seorang individu yang sama sepanjang hayatnya."
+              </p>
+            </div>
+            <div class="flex items-center gap-2.5 shrink-0">
+              <button onclick="answerMyth(3, true)" class="myth-btn-true px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+                <span>Benar</span>
+              </button>
+              <button onclick="answerMyth(3, false)" class="myth-btn-false px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5">
+                <i data-lucide="x" class="w-4 h-4"></i>
+                <span>Tidak Benar</span>
+              </button>
+            </div>
+          </div>
+          <div class="myth-explanation hidden mt-5 pt-4 border-t border-slate-200/80 space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-sm bg-emerald-100 text-emerald-900">Status Fakta: BENAR</span>
+              <span class="text-xs font-bold text-slate-800">Kenyataan ini BENAR</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed bg-white/80 p-3.5 rounded-xl border border-slate-200/60">
+              <strong>Penjelasan Saintifik:</strong> Tepat sekali. Seorang individu boleh mengalami beban berganda serentak, misalnya individu yang obes tetapi pada masa yang sama menghidap anemia kekurangan zat besi. Selain itu, kanak-kanak yang mengalami bantut pada awal usia mempunyai risiko metabolik lebih tinggi untuk menjadi obes dan menghidap penyakit kardiovaskular apabila dewasa.
+            </p>
+          </div>
+        </div>
+
+        <!-- Myth 4 -->
+        <div class="myth-card p-6 rounded-2xl border border-slate-200 bg-slate-50/70" data-myth="4" data-correct="false">
+          <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+            <div class="flex-1 space-y-2">
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-500">
+                <span>Pernyataan #4</span>
+                <span class="myth-status-pill hidden"></span>
+              </div>
+              <p class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                "Masalah bantut (stunting) adalah semata-mata faktor genetik keturunan dan mustahil untuk dicegah."
+              </p>
+            </div>
+            <div class="flex items-center gap-2.5 shrink-0">
+              <button onclick="answerMyth(4, true)" class="myth-btn-true px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+                <span>Benar</span>
+              </button>
+              <button onclick="answerMyth(4, false)" class="myth-btn-false px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5">
+                <i data-lucide="x" class="w-4 h-4"></i>
+                <span>Tidak Benar</span>
+              </button>
+            </div>
+          </div>
+          <div class="myth-explanation hidden mt-5 pt-4 border-t border-slate-200/80 space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-sm bg-orange-100 text-orange-900">Status Fakta: TIDAK BENAR</span>
+              <span class="text-xs font-bold text-slate-800">Kenyataan ini TIDAK BENAR</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed bg-white/80 p-3.5 rounded-xl border border-slate-200/60">
+              <strong>Penjelasan Saintifik:</strong> Genetik hanya menetapkan potensi ketinggian, namun kekurangan nutrisi berpanjangan, amalan penyusuan susu ibu yang terabai, jangkitan cirit-birit berulang, dan kekurangan makanan pelengkap bernutrien dalam tempoh 1,000 hari pertama kehidupan adalah penentu utama bantut. Bantut boleh dicegah dengan penjagaan pemakanan awal yang optimum.
+            </p>
+          </div>
+        </div>
+
+        <!-- Myth 5 -->
+        <div class="myth-card p-6 rounded-2xl border border-slate-200 bg-slate-50/70" data-myth="5" data-correct="false">
+          <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+            <div class="flex-1 space-y-2">
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-500">
+                <span>Pernyataan #5</span>
+                <span class="myth-status-pill hidden"></span>
+              </div>
+              <p class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                "Peranan sekolah dan guru hanya tertumpu kepada akademik, manakala pemakanan murid adalah tanggungjawab keluarga sepenuhnya."
+              </p>
+            </div>
+            <div class="flex items-center gap-2.5 shrink-0">
+              <button onclick="answerMyth(5, true)" class="myth-btn-true px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5">
+                <i data-lucide="check" class="w-4 h-4"></i>
+                <span>Benar</span>
+              </button>
+              <button onclick="answerMyth(5, false)" class="myth-btn-false px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5">
+                <i data-lucide="x" class="w-4 h-4"></i>
+                <span>Tidak Benar</span>
+              </button>
+            </div>
+          </div>
+          <div class="myth-explanation hidden mt-5 pt-4 border-t border-slate-200/80 space-y-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold px-2.5 py-0.5 rounded-sm bg-orange-100 text-orange-900">Status Fakta: TIDAK BENAR</span>
+              <span class="text-xs font-bold text-slate-800">Kenyataan ini TIDAK BENAR</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed bg-white/80 p-3.5 rounded-xl border border-slate-200/60">
+              <strong>Penjelasan Saintifik:</strong> Persekitaran sekolah amat mempengaruhi tabiat pemakanan murid. Guru dan pihak sekolah berperanan memantau pematuhan makanan sihat di kantin sekolah, mengendalikan Rancangan Makanan Tambahan (RMT) dan Program Susu Sekolah (PSS), serta menyemai literasi pemakanan positif tanpa stigma berat badan.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 6. KUIZ INTERAKTIF (8 SOALAN) ==================== -->
+  <section id="kuiz" class="py-12 sm:py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-amber-100 text-amber-900 text-xs font-semibold mb-2">
+          <i data-lucide="help-circle" class="w-3.5 h-3.5"></i>
+          <span>Penilaian Kendiri Interaktif</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          Kuiz Pemahaman: Beban Berganda Malpemakanan
+        </h2>
+        <p class="mt-2 text-xs sm:text-sm text-slate-600">
+          8 soalan objektif (A, B, C, D) untuk menguji kefahaman anda mengenai konsep, punca, kesan, dan langkah pengurusan.
+        </p>
+      </div>
+
+      <!-- Quiz Box Container -->
+      <div id="quizContainer" class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8 space-y-6">
+        
+        <!-- Progress Header -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between text-xs sm:text-sm font-semibold text-slate-600">
+            <span id="quizProgressText">
+              Soalan <strong class="text-emerald-700" id="quizCurrentNum">1</strong> daripada 8
+            </span>
+            <span class="text-slate-500 font-mono" id="quizScoreText">
+              Skor Semasa: 0
+            </span>
+          </div>
+          <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+            <div id="quizProgressBar" class="h-full bg-emerald-600 transition-all duration-300 rounded-full" style="width: 12.5%;"></div>
+          </div>
+        </div>
+
+        <!-- Question Title -->
+        <div class="pt-2">
+          <h3 id="quizQuestionText" class="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+            Memuatkan soalan...
+          </h3>
+        </div>
+
+        <!-- Options Container -->
+        <div id="quizOptionsContainer" class="space-y-3">
+          <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- Feedback Box -->
+        <div id="quizFeedbackBox" class="hidden p-4 sm:p-5 rounded-xl border transition-all space-y-2">
+          <div id="quizFeedbackStatus" class="flex items-center gap-2 font-bold text-sm"></div>
+          <p id="quizFeedbackText" class="text-xs sm:text-sm leading-relaxed text-slate-700"></p>
+        </div>
+
+        <!-- Action Footer -->
+        <div class="pt-4 border-t border-slate-100 flex items-center justify-between gap-4">
+          <span id="quizInstructionText" class="text-[11px] text-slate-500">
+            Sila pilih satu jawapan di atas.
+          </span>
+
+          <button id="quizCheckBtn" onclick="checkQuizAnswer()" disabled class="px-5 py-2.5 bg-emerald-600 disabled:bg-slate-200 disabled:text-slate-400 text-white rounded-lg font-semibold text-xs sm:text-sm hover:bg-emerald-700 transition-colors shadow-xs disabled:cursor-not-allowed">
+            Sahkan Jawapan
+          </button>
+
+          <button id="quizNextBtn" onclick="nextQuizQuestion()" class="hidden px-5 py-2.5 bg-emerald-700 text-white rounded-lg font-semibold text-xs sm:text-sm hover:bg-emerald-800 transition-colors shadow-xs flex items-center gap-2">
+            <span id="quizNextBtnText">Soalan Seterusnya</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quiz Completed Results Box -->
+      <div id="quizResultBox" class="hidden bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-10 text-center space-y-6">
+        <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto shadow-xs">
+          <i data-lucide="award" class="w-8 h-8"></i>
+        </div>
+
+        <div class="space-y-2">
+          <span class="text-xs font-semibold uppercase tracking-wider text-slate-500">
+            Keputusan Penilaian Kendiri
+          </span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+            Skor Anda: <span id="finalScoreVal" class="text-emerald-700">0</span> / 8
+          </h3>
+          <p id="finalPercentVal" class="text-sm font-semibold text-slate-600">
+            Peratusan: 0%
+          </p>
+        </div>
+
+        <div id="encouragingMsgBox" class="p-5 rounded-2xl border max-w-xl mx-auto text-left space-y-1.5">
+          <!-- Filled by JS -->
+        </div>
+
+        <!-- Summary list -->
+        <div class="text-left pt-4 border-t border-slate-100">
+          <h4 class="text-sm font-bold text-slate-900 mb-3">Ringkasan Semakan Soalan (8 Soalan):</h4>
+          <div id="quizSummaryList" class="space-y-2"></div>
+        </div>
+
+        <div class="pt-4 flex justify-center">
+          <button onclick="resetQuiz()" class="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm rounded-xl transition-colors shadow-xs flex items-center gap-2">
+            <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+            <span>Ulang Kuiz Semula</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 7. RUJUKAN ==================== -->
+  <section id="rujukan" class="py-12 sm:py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mb-8">
+        <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-700 mb-2">
+          <i data-lucide="book-open" class="w-4 h-4"></i>
+          <span>Sumber Rujukan Ilmiah & Dokumen Rasmi</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+          Senarai Rujukan & Sumber Sahih (2016–2024)
+        </h2>
+        <p class="mt-2 text-sm sm:text-base text-slate-600 leading-relaxed">
+          Semua fakta, petunjuk kesihatan, dan statistik dalam aplikasi ini diambil daripada laporan rasmi Kementerian Kesihatan Malaysia, Pertubuhan Kesihatan Sedunia (WHO), UNICEF, dan kajian SEANUTS II.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        
+        <div class="p-5 rounded-2xl bg-slate-50/70 border border-slate-200 hover:border-emerald-300 transition-colors flex flex-col justify-between">
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-between gap-2 text-xs">
+              <span class="font-semibold text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-sm">Laporan Kerajaan</span>
+              <span class="text-slate-500 font-mono font-medium">Tahun 2020</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+              National Health and Morbidity Survey (NHMS) 2019: Non-Communicable Diseases, Healthcare Demand, and Health Literacy
+            </h3>
+            <p class="text-xs text-slate-600"><strong>Pengarang:</strong> Kementerian Kesihatan Malaysia (KKM)</p>
+            <p class="text-xs text-slate-500"><strong>Penerbit:</strong> Institut Kesihatan Umum (IKU), KKM</p>
+          </div>
+          <div class="pt-3 border-t border-slate-200/60">
+            <a href="https://iku.moh.gov.my/nhms-2019" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-900 hover:underline">
+              <span>Buka Pautan Sumber Asal</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50/70 border border-slate-200 hover:border-emerald-300 transition-colors flex flex-col justify-between">
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-between gap-2 text-xs">
+              <span class="font-semibold text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-sm">Laporan Kerajaan</span>
+              <span class="text-slate-500 font-mono font-medium">Tahun 2024</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+              National Health and Morbidity Survey (NHMS) 2023: Non-Communicable Diseases and Healthcare Demand - Summary Findings
+            </h3>
+            <p class="text-xs text-slate-600"><strong>Pengarang:</strong> Kementerian Kesihatan Malaysia (KKM)</p>
+            <p class="text-xs text-slate-500"><strong>Penerbit:</strong> Institut Kesihatan Umum (IKU), KKM</p>
+          </div>
+          <div class="pt-3 border-t border-slate-200/60">
+            <a href="https://iku.moh.gov.my/nhms-2023" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-900 hover:underline">
+              <span>Buka Pautan Sumber Asal</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50/70 border border-slate-200 hover:border-emerald-300 transition-colors flex flex-col justify-between">
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-between gap-2 text-xs">
+              <span class="font-semibold text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-sm">Pertubuhan Antarabangsa</span>
+              <span class="text-slate-500 font-mono font-medium">Tahun 2020</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+              The Double Burden of Malnutrition: Priority actions on ending childhood obesity and undernutrition
+            </h3>
+            <p class="text-xs text-slate-600"><strong>Pengarang:</strong> World Health Organization (WHO)</p>
+            <p class="text-xs text-slate-500"><strong>Penerbit:</strong> World Health Organization, Geneva</p>
+          </div>
+          <div class="pt-3 border-t border-slate-200/60">
+            <a href="https://www.who.int/nutrition/double-burden-malnutrition/en/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-900 hover:underline">
+              <span>Buka Pautan Sumber Asal</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50/70 border border-slate-200 hover:border-emerald-300 transition-colors flex flex-col justify-between">
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-between gap-2 text-xs">
+              <span class="font-semibold text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-sm">Jurnal & Penyelidikan</span>
+              <span class="text-slate-500 font-mono font-medium">Tahun 2022</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+              South East Asian Nutrition Surveys II (SEANUTS II): Nutritional status and dietary intake of Malaysian children
+            </h3>
+            <p class="text-xs text-slate-600"><strong>Pengarang:</strong> Poh, B. K., et al. (SEANUTS II Consortium)</p>
+            <p class="text-xs text-slate-500"><strong>Penerbit:</strong> Universiti Kebangsaan Malaysia & FrieslandCampina Institute</p>
+          </div>
+          <div class="pt-3 border-t border-slate-200/60">
+            <a href="https://www.frieslandcampinainstitute.com/asia/seanuts-ii/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-900 hover:underline">
+              <span>Buka Pautan Sumber Asal</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50/70 border border-slate-200 hover:border-emerald-300 transition-colors flex flex-col justify-between">
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-between gap-2 text-xs">
+              <span class="font-semibold text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-sm">Dasar Pemakanan</span>
+              <span class="text-slate-500 font-mono font-medium">Tahun 2021</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+              Pelan Tindakan Pemakanan Kebangsaan Malaysia (NPANM III) & Panduan Pinggan Sihat Malaysia (Suku-Suku Separuh)
+            </h3>
+            <p class="text-xs text-slate-600"><strong>Pengarang:</strong> Bahagian Pemakanan, Kementerian Kesihatan Malaysia</p>
+            <p class="text-xs text-slate-500"><strong>Penerbit:</strong> Bahagian Pemakanan, KKM Putrajaya</p>
+          </div>
+          <div class="pt-3 border-t border-slate-200/60">
+            <a href="https://nutrition.moh.gov.my" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-900 hover:underline">
+              <span>Buka Pautan Sumber Asal</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-slate-50/70 border border-slate-200 hover:border-emerald-300 transition-colors flex flex-col justify-between">
+          <div class="space-y-2 mb-4">
+            <div class="flex items-center justify-between gap-2 text-xs">
+              <span class="font-semibold text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-sm">Pertubuhan Antarabangsa</span>
+              <span class="text-slate-500 font-mono font-medium">Tahun 2019</span>
+            </div>
+            <h3 class="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+              The State of the World’s Children 2019: Children, Food and Nutrition (Malaysia Focus)
+            </h3>
+            <p class="text-xs text-slate-600"><strong>Pengarang:</strong> UNICEF Malaysia</p>
+            <p class="text-xs text-slate-500"><strong>Penerbit:</strong> United Nations Children’s Fund (UNICEF) Malaysia</p>
+          </div>
+          <div class="pt-3 border-t border-slate-200/60">
+            <a href="https://www.unicef.org/malaysia/reports/state-worlds-children-2019" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-700 hover:text-emerald-900 hover:underline">
+              <span>Buka Pautan Sumber Asal</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== 8. FOOTER ==================== -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-8 border-b border-slate-800">
+        <div class="space-y-1">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-emerald-600 text-white flex items-center justify-center font-bold text-sm">
+              NL
+            </div>
+            <span class="text-base font-bold text-white tracking-tight">
+              NutriLearn Malaysia
+            </span>
+          </div>
+          <p class="text-xs text-slate-400">
+            PKES3103 Pemakanan dan Kesejahteraan · Kumpulan 5
+          </p>
+          <p class="text-xs text-slate-500">
+            Subtopik: Kumpulan 5 – Punca dan Kesan Beban Berganda Malpemakanan
+          </p>
+        </div>
+
+        <div>
+          <a href="#utama" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium transition-colors inline-flex items-center gap-2 border border-slate-700">
+            <span>Kembali ke Atas</span>
+            <i data-lucide="arrow-up" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-[11px] text-slate-400 leading-relaxed max-w-4xl space-y-2">
+        <p>
+          <strong class="text-slate-300">Penafian Pendidikan:</strong> Aplikasi ini ialah bahan pembelajaran kendiri untuk tujuan pendidikan sahaja dan TIDAK boleh digunakan untuk mendiagnosis kesihatan individu, menggantikan nasihat perubatan profesional, atau dijadikan instrumen klinikal.
+        </p>
+        <p class="text-slate-400">
+          Dibangunkan khusus sebagai bahan bantu mengajar dan rujukan kendiri kursus PKES3103 Pemakanan dan Kesejahteraan bagi memupuk literasi pemakanan positif dalam kalangan bakal guru, murid, dan komuniti sekolah.
+        </p>
+      </div>
+
+      <div class="pt-4 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <p>© 2026 NutriLearn Malaysia · Koleksi Pendidikan Pemakanan Kebangsaan</p>
+        <div class="flex items-center gap-4">
+          <span>Bahasa Melayu Baku</span>
+          <span>·</span>
+          <span>Bebas Stigma Berat Badan</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile Hamburger Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if (mobileBtn && mobileDrawer) {
+      mobileBtn.addEventListener('click', () => {
+        mobileDrawer.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileDrawer.classList.add('hidden');
+        });
+      });
+    }
+
+    // Tab Switching Logic in Learning Notes
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      const activeEl = document.getElementById(tabId);
+      if (activeEl) activeEl.classList.remove('hidden');
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-emerald-800', 'font-bold', 'shadow-sm', 'border', 'border-slate-200/60');
+        btn.classList.add('text-slate-600', 'font-medium');
+      });
+
+      const activeBtn = document.getElementById('btn-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.remove('text-slate-600', 'font-medium');
+        activeBtn.classList.add('bg-white', 'text-emerald-800', 'font-bold', 'shadow-sm', 'border', 'border-slate-200/60');
+      }
+      lucide.createIcons();
+    }
+
+    // Plate Explorer Logic
+    function selectPlate(section) {
+      document.querySelectorAll('.plate-desc').forEach(el => el.classList.add('hidden'));
+      const descEl = document.getElementById('plate-desc-' + section);
+      if (descEl) descEl.classList.remove('hidden');
+
+      ['veggies', 'carbs', 'protein'].forEach(sec => {
+        const btn = document.getElementById('plate-' + sec);
+        if (!btn) return;
+        if (sec === section) {
+          btn.classList.add('scale-102', 'z-10', 'ring-2');
+          if (sec === 'veggies') btn.classList.add('bg-emerald-100', 'border-emerald-400', 'ring-emerald-500');
+          if (sec === 'carbs') btn.classList.add('bg-amber-100', 'border-amber-400', 'ring-amber-500');
+          if (sec === 'protein') btn.classList.add('bg-orange-100', 'border-orange-400', 'ring-orange-500');
+        } else {
+          btn.classList.remove('scale-102', 'z-10', 'ring-2', 'ring-emerald-500', 'ring-amber-500', 'ring-orange-500');
+        }
+      });
+    }
+
+    // Stat Category Filtering
+    function filterStats(cat) {
+      document.querySelectorAll('.stat-filter-btn').forEach(btn => {
+        btn.classList.remove('bg-emerald-700', 'text-white', 'font-semibold');
+        btn.classList.add('bg-white', 'border', 'border-slate-200', 'text-slate-700');
+      });
+      const activeBtn = document.getElementById('stat-btn-' + cat);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-white', 'border', 'border-slate-200', 'text-slate-700');
+        activeBtn.classList.add('bg-emerald-700', 'text-white', 'font-semibold');
+      }
+
+      document.querySelectorAll('.stat-card').forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Myths & Facts Interactive Logic
+    let answeredMyths = {};
+    function answerMyth(id, userChoice) {
+      answeredMyths[id] = userChoice;
+      const card = document.querySelector(`.myth-card[data-myth="${id}"]`);
+      if (!card) return;
+
+      const isCorrectAnswer = card.getAttribute('data-correct') === 'true';
+      const isUserRight = userChoice === isCorrectAnswer;
+
+      const explanationEl = card.querySelector('.myth-explanation');
+      if (explanationEl) explanationEl.classList.remove('hidden');
+
+      const pillEl = card.querySelector('.myth-status-pill');
+      if (pillEl) {
+        pillEl.classList.remove('hidden');
+        pillEl.textContent = isUserRight ? '✓ Pilihan Anda Tepat!' : '✕ Pilihan Anda Kurang Tepat';
+        pillEl.className = isUserRight
+          ? 'myth-status-pill text-xs font-bold text-emerald-700'
+          : 'myth-status-pill text-xs font-bold text-amber-800';
+      }
+
+      const btnTrue = card.querySelector('.myth-btn-true');
+      const btnFalse = card.querySelector('.myth-btn-false');
+
+      if (userChoice === true) {
+        btnTrue.className = isCorrectAnswer
+          ? 'myth-btn-true px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-600 text-white shadow-xs ring-2 ring-emerald-600 flex items-center gap-1.5'
+          : 'myth-btn-true px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-amber-600 text-white shadow-xs ring-2 ring-amber-600 flex items-center gap-1.5';
+        btnFalse.className = 'myth-btn-false px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 flex items-center gap-1.5';
+      } else {
+        btnFalse.className = !isCorrectAnswer
+          ? 'myth-btn-false px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-600 text-white shadow-xs ring-2 ring-emerald-600 flex items-center gap-1.5'
+          : 'myth-btn-false px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-amber-600 text-white shadow-xs ring-2 ring-amber-600 flex items-center gap-1.5';
+        btnTrue.className = 'myth-btn-true px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 flex items-center gap-1.5';
+      }
+
+      card.className = isUserRight
+        ? 'myth-card p-6 rounded-2xl border border-emerald-300 bg-emerald-50/40 shadow-xs'
+        : 'myth-card p-6 rounded-2xl border border-amber-300 bg-amber-50/40 shadow-xs';
+
+      document.getElementById('mythAnsweredCount').textContent = Object.keys(answeredMyths).length;
+      lucide.createIcons();
+    }
+
+    function resetMyths() {
+      answeredMyths = {};
+      document.getElementById('mythAnsweredCount').textContent = '0';
+      document.querySelectorAll('.myth-card').forEach(card => {
+        card.className = 'myth-card p-6 rounded-2xl border border-slate-200 bg-slate-50/70';
+        const exp = card.querySelector('.myth-explanation');
+        if (exp) exp.classList.add('hidden');
+        const pill = card.querySelector('.myth-status-pill');
+        if (pill) pill.classList.add('hidden');
+
+        const btnTrue = card.querySelector('.myth-btn-true');
+        if (btnTrue) btnTrue.className = 'myth-btn-true px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5';
+
+        const btnFalse = card.querySelector('.myth-btn-false');
+        if (btnFalse) btnFalse.className = 'myth-btn-false px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 flex items-center gap-1.5';
+      });
+      lucide.createIcons();
+    }
+
+    // 8-Question Quiz Data & Logic
+    const quizQuestions = [
+      {
+        id: 1,
+        question: 'Apakah definisi yang paling tepat bagi konsep "Beban Berganda Malpemakanan" (Double Burden of Malnutrition)?',
+        options: [
+          { key: 'A', text: 'Keadaan di mana seseorang individu memakan makanan bergoreng dua kali sehari secara berturut-turut.' },
+          { key: 'B', text: 'Kewujudan serentak masalah kekurangan zat makanan dan berat badan berlebihan atau obesiti pada peringkat individu, isi rumah, atau populasi.' },
+          { key: 'C', text: 'Situasi di mana pesakit mengalami penyakit berjangkit seperti selesema dan denggi pada masa yang sama.' },
+          { key: 'D', text: 'Kekurangan bekalan makanan yang hanya berlaku di kawasan pedalaman akibat bencana alam.' }
+        ],
+        correctAnswer: 'B',
+        explanation: 'Beban Berganda Malpemakanan merujuk kepada kewujudan serentak masalah kekurangan pemakanan (seperti bantut, kurus, dan anemia) bersama-sama dengan berat badan berlebihan, obesiti, serta penyakit tidak berjangkit berkaitan pemakanan.'
+      },
+      {
+        id: 2,
+        question: 'Antara berikut, situasi manakah yang menggambarkan beban berganda malpemakanan pada peringkat ISI RUMAH?',
+        options: [
+          { key: 'A', text: 'Seorang bapa yang menghidap penyakit diabetes dan tekanan darah tinggi serentak.' },
+          { key: 'B', text: 'Sekumpulan murid yang membeli minuman manis di luar pagar sekolah.' },
+          { key: 'C', text: 'Seorang ibu yang mengalami masalah obesiti manakala anak kecilnya dalam rumah yang sama mengalami bantut atau kurang berat badan.' },
+          { key: 'D', text: 'Sebuah keluarga yang makan bersama di meja makan pada setiap malam.' }
+        ],
+        correctAnswer: 'C',
+        explanation: 'Pada peringkat isi rumah, beban berganda terjadi apabila seorang ahli keluarga (contohnya anak) mengalami kekurangan zat makanan manakala ahli keluarga yang lain (contohnya ibu bapa) mengalami berat badan berlebihan atau obesiti di bawah satu bumbung.'
+      },
+      {
+        id: 3,
+        question: 'Apakah yang dimaksudkan dengan fenomena "Kelaparan Tersembunyi" (Hidden Hunger)?',
+        options: [
+          { key: 'A', text: 'Rasa lapar yang disembunyikan oleh murid kerana berasa malu untuk meminta makanan daripada guru.' },
+          { key: 'B', text: 'Kekurangan mikronutrien penting (vitamin dan mineral) dalam badan walaupun jumlah kalori yang diambil mencukupi atau berlebihan.' },
+          { key: 'C', text: 'Amalan berpuasa berselang-seli (intermittent fasting) tanpa bimbingan doktor.' },
+          { key: 'D', text: 'Keadaan tidur semasa perut kosong selepas mengulang kaji pelajaran lewat malam.' }
+        ],
+        correctAnswer: 'B',
+        explanation: 'Kelaparan tersembunyi berlaku apabila tubuh kekurangan mikronutrien penting seperti zat besi, vitamin A, iodin, dan zink. Individu mungkin berbadan gempal kerana cukup kalori daripada karbohidrat dan lemak, namun sel tubuhnya kekurangan mikronutrien.'
+      },
+      {
+        id: 4,
+        question: 'Mengapakah tempoh "1,000 Hari Pertama Kehidupan" (sejak kehamilan sehingga anak berumur 2 tahun) sangat kritikal dalam menangani beban berganda?',
+        options: [
+          { key: 'A', text: 'Kerana pada umur 2 tahun anak mula menduduki peperiksaan bertulis di prasekolah.' },
+          { key: 'B', text: 'Kerana ia merupakan jendela emas perkembangan kognitif, pertumbuhan linear fizikal, dan pengaturcaraan metabolik badan yang memberi kesan sepanjang hayat.' },
+          { key: 'C', text: 'Kerana selepas usia 2 tahun kanak-kanak tidak lagi memerlukan pengambilan sebarang vitamin.' },
+          { key: 'D', text: 'Kerana pada waktu ini anak dibenarkan meminum minuman manis secara bebas.' }
+        ],
+        correctAnswer: 'B',
+        explanation: '1,000 hari pertama merupakan waktu kritikal di mana kekurangan nutrisi boleh mengakibatkan bantut dan perkembangan otak terbantut. Malah, ia boleh mengubah metabolisme anak sehingga lebih berisiko mengalami obesiti dan diabetes apabila dewasa.'
+      },
+      {
+        id: 5,
+        question: 'Bagaimanakah masalah kekurangan zat makanan seperti anemia menjejaskan proses pembelajaran murid di dalam bilik darjah?',
+        options: [
+          { key: 'A', text: 'Murid menjadi lebih aktif berlari di dalam bilik darjah tanpa rasa penat.' },
+          { key: 'B', text: 'Menyebabkan kelesuan, sukar menumpukan perhatian, penurunan kapasiti kognitif dan memori, serta meningkatkan kadar ketidakhadiran ke sekolah.' },
+          { key: 'C', text: 'Meningkatkan keupayaan murid menyelesaikan masalah matematik yang rumit.' },
+          { key: 'D', text: 'Hanya menjejaskan penglihatan warna murid tanpa memberi kesan kepada prestasi akademik.' }
+        ],
+        correctAnswer: 'B',
+        explanation: 'Anemia kekurangan zat besi mengurangkan penghantaran oksigen ke tisu otak, menyebabkan murid berasa lesu, cepat mengantuk, hilang daya fokus, dan mencatatkan penurunan daya serapan akademik serta kerap tidak hadir.'
+      },
+      {
+        id: 6,
+        question: 'Antara faktor persekitaran dan masyarakat berikut, faktor manakah yang paling menyumbang kepada peningkatan obesiti murid di Malaysia?',
+        options: [
+          { key: 'A', text: 'Penyediaan kemudahan sukan dan laluan berbasikal yang selamat di setiap taman.' },
+          { key: 'B', text: 'Pemasaran meluas makanan terproses ultra (UPF) yang tinggi gula, garam dan lemak, serta persekitaran obesogenik di sekitar sekolah.' },
+          { key: 'C', text: 'Kempen kesedaran minum air kosong tanpa gula oleh Kementerian Kesihatan Malaysia.' },
+          { key: 'D', text: 'Kewujudan mata pelajaran Pendidikan Kesihatan dalam kurikulum kebangsaan.' }
+        ],
+        correctAnswer: 'B',
+        explanation: 'Persekitaran obesogenik yang dipenuhi dengan akses mudah kepada makanan terproses ultra (UPF), minuman manis, dan iklan yang menyasarkan kanak-kanak mendorong pemilihan makanan tinggi kalori tetapi rendah nilai gizi.'
+      },
+      {
+        id: 7,
+        question: 'Apakah panduan bahagian makanan yang betul mengikut konsep Pinggan Sihat Malaysia "Suku-Suku Separuh" yang disarankan oleh KKM?',
+        options: [
+          { key: 'A', text: 'Separuh nasi/karbohidrat, suku protein, dan suku sayur-sayuran.' },
+          { key: 'B', text: 'Suku pinggan bijirin/karbohidrat, suku pinggan sumber protein (ikan/ayam/kekacang), dan separuh pinggan sayur-sayuran serta buah-buahan.' },
+          { key: 'C', text: 'Separuh daging, separuh minuman bergula, tanpa sebarang buah-buahan.' },
+          { key: 'D', text: 'Tiga perempat nasi lemak dan satu perempat kuih manis.' }
+        ],
+        correctAnswer: 'B',
+        explanation: 'Konsep Pinggan Sihat Malaysia "Suku-Suku Separuh" menggariskan suku pinggan karbohidrat (nasi, mi, roti), suku pinggan protein (ikan, ayam, telur, tauhu), dan separuh pinggan sayur-sayuran dan buah-buahan berserat tinggi.'
+      },
+      {
+        id: 8,
+        question: 'Sebagai seorang bakal guru, apakah pendekatan beretika dan berkesan dalam membimbing murid yang menghadapi masalah pemakanan di sekolah?',
+        options: [
+          { key: 'A', text: 'Menegur berat badan murid di hadapan rakan sekelas untuk memberi pengajaran.' },
+          { key: 'B', text: 'Menyokong persekitaran kantin sihat, mendidik literasi pemakanan positif tanpa melabel, serta memantau program bantuan pemakanan seperti RMT secara teliti.' },
+          { key: 'C', text: 'Melarang murid yang bersaiz gempal daripada menyertai sebarang aktiviti sukan sekolah.' },
+          { key: 'D', text: 'Mengabaikan isu pemakanan murid kerana menganggapnya bukan sebahagian daripada tugas pendidik.' }
+        ],
+        correctAnswer: 'B',
+        explanation: 'Pendidik perlu menerapkan pendekatan mesra, menghormati maruah murid tanpa stigma, menyokong program makanan berkhasiat seperti RMT, memantau kualiti makanan kantin, dan membimbing literasi pemakanan seimbang.'
+      }
+    ];
+
+    let currentQuizIndex = 0;
+    let selectedQuizOpt = null;
+    let isQuizChecked = false;
+    let quizScore = 0;
+    let recordedAnswers = [];
+
+    function renderQuizQuestion() {
+      const q = quizQuestions[currentQuizIndex];
+      document.getElementById('quizCurrentNum').textContent = currentQuizIndex + 1;
+      document.getElementById('quizScoreText').textContent = 'Skor Semasa: ' + quizScore;
+      document.getElementById('quizProgressBar').style.width = ((currentQuizIndex + 1) / quizQuestions.length * 100) + '%';
+      document.getElementById('quizQuestionText').textContent = q.id + '. ' + q.question;
+
+      const optsContainer = document.getElementById('quizOptionsContainer');
+      optsContainer.innerHTML = '';
+
+      q.options.forEach(opt => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.id = 'quiz-opt-' + opt.key;
+        btn.className = 'w-full text-left p-3.5 sm:p-4 rounded-xl border border-slate-200 bg-white text-slate-700 text-xs sm:text-sm hover:border-slate-300 hover:bg-slate-50 transition-all flex items-start gap-3';
+        btn.innerHTML = `
+          <span class="quiz-badge w-6 h-6 rounded-md bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">${opt.key}</span>
+          <span class="flex-1 leading-relaxed">${opt.text}</span>
+          <span class="quiz-status-icon hidden shrink-0 mt-0.5"></span>
+        `;
+        btn.onclick = () => selectQuizOption(opt.key);
+        optsContainer.appendChild(btn);
+      });
+
+      document.getElementById('quizFeedbackBox').classList.add('hidden');
+      document.getElementById('quizCheckBtn').classList.remove('hidden');
+      document.getElementById('quizCheckBtn').disabled = true;
+      document.getElementById('quizNextBtn').classList.add('hidden');
+      document.getElementById('quizInstructionText').textContent = 'Sila pilih satu jawapan di atas.';
+      
+      selectedQuizOpt = null;
+      isQuizChecked = false;
+      lucide.createIcons();
+    }
+
+    function selectQuizOption(key) {
+      if (isQuizChecked) return;
+      selectedQuizOpt = key;
+
+      quizQuestions[currentQuizIndex].options.forEach(opt => {
+        const btn = document.getElementById('quiz-opt-' + opt.key);
+        const badge = btn.querySelector('.quiz-badge');
+        if (opt.key === key) {
+          btn.className = 'w-full text-left p-3.5 sm:p-4 rounded-xl border border-emerald-500 bg-emerald-50 text-emerald-950 ring-2 ring-emerald-500 font-semibold transition-all flex items-start gap-3';
+          badge.className = 'quiz-badge w-6 h-6 rounded-md bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5';
+        } else {
+          btn.className = 'w-full text-left p-3.5 sm:p-4 rounded-xl border border-slate-200 bg-white text-slate-700 text-xs sm:text-sm hover:border-slate-300 hover:bg-slate-50 transition-all flex items-start gap-3';
+          badge.className = 'quiz-badge w-6 h-6 rounded-md bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5';
+        }
+      });
+
+      document.getElementById('quizCheckBtn').disabled = false;
+      document.getElementById('quizInstructionText').textContent = 'Klik "Sahkan Jawapan" untuk semakan.';
+    }
+
+    function checkQuizAnswer() {
+      if (!selectedQuizOpt || isQuizChecked) return;
+      isQuizChecked = true;
+
+      const q = quizQuestions[currentQuizIndex];
+      const isCorrect = selectedQuizOpt === q.correctAnswer;
+      if (isCorrect) quizScore++;
+
+      recordedAnswers.push({
+        id: q.id,
+        question: q.question,
+        chosen: selectedQuizOpt,
+        correct: q.correctAnswer,
+        isCorrect: isCorrect
+      });
+
+      q.options.forEach(opt => {
+        const btn = document.getElementById('quiz-opt-' + opt.key);
+        btn.disabled = true;
+        const iconSpan = btn.querySelector('.quiz-status-icon');
+        const badge = btn.querySelector('.quiz-badge');
+
+        if (opt.key === q.correctAnswer) {
+          btn.className = 'w-full text-left p-3.5 sm:p-4 rounded-xl border border-emerald-400 bg-emerald-50 text-emerald-950 font-medium ring-1 ring-emerald-500 flex items-start gap-3';
+          badge.className = 'quiz-badge w-6 h-6 rounded-md bg-emerald-600 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5';
+          iconSpan.classList.remove('hidden');
+          iconSpan.innerHTML = '<i data-lucide="check-circle" class="w-5 h-5 text-emerald-600"></i>';
+        } else if (opt.key === selectedQuizOpt && !isCorrect) {
+          btn.className = 'w-full text-left p-3.5 sm:p-4 rounded-xl border border-red-300 bg-red-50 text-red-950 ring-1 ring-red-400 flex items-start gap-3';
+          badge.className = 'quiz-badge w-6 h-6 rounded-md bg-red-600 text-white flex items-center justify-center font-bold text-xs shrink-0 mt-0.5';
+          iconSpan.classList.remove('hidden');
+          iconSpan.innerHTML = '<i data-lucide="x-circle" class="w-5 h-5 text-red-500"></i>';
+        } else {
+          btn.className = 'w-full text-left p-3.5 sm:p-4 rounded-xl border border-slate-200 bg-slate-50/60 text-slate-400 opacity-75 flex items-start gap-3';
+        }
+      });
+
+      const feedbackBox = document.getElementById('quizFeedbackBox');
+      const feedbackStatus = document.getElementById('quizFeedbackStatus');
+      const feedbackText = document.getElementById('quizFeedbackText');
+
+      feedbackBox.classList.remove('hidden');
+      if (isCorrect) {
+        feedbackBox.className = 'p-4 sm:p-5 rounded-xl border border-emerald-200 bg-emerald-50/80 text-emerald-950 space-y-2';
+        feedbackStatus.innerHTML = '<i data-lucide="check-circle" class="w-4 h-4 text-emerald-700"></i><span>Tahniah! Jawapan Anda Betul.</span>';
+      } else {
+        feedbackBox.className = 'p-4 sm:p-5 rounded-xl border border-amber-200 bg-amber-50/80 text-amber-950 space-y-2';
+        feedbackStatus.innerHTML = '<i data-lucide="x-circle" class="w-4 h-4 text-amber-700"></i><span>Jawapan Kurang Tepat. Jawapan betul ialah: ' + q.correctAnswer + '</span>';
+      }
+      feedbackText.innerHTML = '<strong>Penjelasan:</strong> ' + q.explanation;
+
+      document.getElementById('quizCheckBtn').classList.add('hidden');
+      const nextBtn = document.getElementById('quizNextBtn');
+      nextBtn.classList.remove('hidden');
+      document.getElementById('quizNextBtnText').textContent = (currentQuizIndex + 1 === quizQuestions.length)
+        ? 'Lihat Keputusan Akhir'
+        : 'Soalan Seterusnya';
+      document.getElementById('quizInstructionText').textContent = 'Pilihan telah dikunci.';
+
+      lucide.createIcons();
+    }
+
+    function nextQuizQuestion() {
+      if (currentQuizIndex + 1 < quizQuestions.length) {
+        currentQuizIndex++;
+        renderQuizQuestion();
+      } else {
+        showQuizResults();
+      }
+    }
+
+    function showQuizResults() {
+      document.getElementById('quizContainer').classList.add('hidden');
+      const resultBox = document.getElementById('quizResultBox');
+      resultBox.classList.remove('hidden');
+
+      document.getElementById('finalScoreVal').textContent = quizScore;
+      const pct = Math.round((quizScore / quizQuestions.length) * 100);
+      document.getElementById('finalPercentVal').textContent = 'Peratusan: ' + pct + '%';
+
+      const msgBox = document.getElementById('encouragingMsgBox');
+      if (pct >= 85) {
+        msgBox.className = 'p-5 rounded-2xl border bg-emerald-100 text-emerald-900 border-emerald-300 max-w-xl mx-auto text-left space-y-1.5';
+        msgBox.innerHTML = `
+          <div class="flex items-center gap-2 font-bold text-sm">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>Cemerlang & Tahniah!</span>
+          </div>
+          <p class="text-xs sm:text-sm leading-relaxed">
+            Anda menunjukkan penguasaan yang amat tinggi terhadap konsep Beban Berganda Malpemakanan. Kefahaman ini sangat bernilai untuk bakal guru dalam merancang persekitaran sekolah dan komuniti yang sihat serta inklusif!
+          </p>
+        `;
+      } else if (pct >= 60) {
+        msgBox.className = 'p-5 rounded-2xl border bg-amber-100 text-amber-900 border-amber-300 max-w-xl mx-auto text-left space-y-1.5';
+        msgBox.innerHTML = `
+          <div class="flex items-center gap-2 font-bold text-sm">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>Usaha yang Sangat Baik!</span>
+          </div>
+          <p class="text-xs sm:text-sm leading-relaxed">
+            Anda mempunyai asas yang kukuh mengenai punca dan kesan beban berganda. Semak semula beberapa nota dan fakta statistik untuk memantapkan pemahaman holistik anda!
+          </p>
+        `;
+      } else {
+        msgBox.className = 'p-5 rounded-2xl border bg-orange-100 text-orange-900 border-orange-300 max-w-xl mx-auto text-left space-y-1.5';
+        msgBox.innerHTML = `
+          <div class="flex items-center gap-2 font-bold text-sm">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>Teruskan Pembelajaran!</span>
+          </div>
+          <p class="text-xs sm:text-sm leading-relaxed">
+            Topik ini padat dengan konsep penting seperti perbezaan kekurangan zat dan kelaparan tersembunyi. Jangan berputus asa, ulang kaji bahagian Nota Pembelajaran dan cuba kuiz ini sekali lagi!
+          </p>
+        `;
+      }
+
+      const summaryList = document.getElementById('quizSummaryList');
+      summaryList.innerHTML = '';
+      recordedAnswers.forEach(rec => {
+        const item = document.createElement('div');
+        item.className = 'p-3 rounded-lg bg-slate-50 border border-slate-200/80 text-xs flex items-start justify-between gap-3';
+        item.innerHTML = `
+          <div class="flex-1 space-y-1">
+            <span class="font-semibold text-slate-900 block">Soalan ${rec.id}: ${rec.question}</span>
+            <span class="text-slate-500 block">Jawapan Anda: <strong>${rec.chosen}</strong> · Jawapan Betul: <strong>${rec.correct}</strong></span>
+          </div>
+          <span class="font-semibold px-2 py-0.5 rounded-sm shrink-0 ${rec.isCorrect ? 'bg-emerald-100 text-emerald-800' : 'bg-red-100 text-red-800'}">
+            ${rec.isCorrect ? 'Betul' : 'Salah'}
+          </span>
+        `;
+        summaryList.appendChild(item);
+      });
+
+      lucide.createIcons();
+    }
+
+    function resetQuiz() {
+      currentQuizIndex = 0;
+      selectedQuizOpt = null;
+      isQuizChecked = false;
+      quizScore = 0;
+      recordedAnswers = [];
+
+      document.getElementById('quizResultBox').classList.add('hidden');
+      document.getElementById('quizContainer').classList.remove('hidden');
+      renderQuizQuestion();
+    }
+
+    // Initial render
+    renderQuizQuestion();
+  </script>
+</body>
+</html>
